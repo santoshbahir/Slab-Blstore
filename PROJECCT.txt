@@ -1,0 +1,13 @@
+Slab Allocator:
+A fast, and space-efficient kernel memory allocator simulation in user space. The object-cache
+interface reduces the cost for allocating and freeing complex objects and decreaes reduce internal and
+external fragmentation.
+
+
+Transaction Block Store:
+A transactional block store using the write­anywhere file layout (WAFL) scheme to ensure all operations including 
+updates to data and meta­data must are atomic.
+
+Slab Block Store:
+This projects combines the ideas of slab allcator and Transactional block store. It investigates if block store
+also can gain in efficiency and reduces fragmentation if slab allcocation mechanism is deployed for block store.

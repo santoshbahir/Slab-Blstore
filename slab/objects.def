@@ -1,0 +1,20 @@
+/* -*- mode: c -*- */
+
+/* HACK: Swaroop has -- for the lack of patience, hard-coded numbers 
+   for object sized assuming PAGE_SIZE = 4096; replace them with some 
+   function of PAGE_SIZE if there is a need for portabality */
+
+
+/* Syntax of Specification Language:
+   Type(SerialNo, Size, Alignment, #objs in stess-test);
+
+   where Type ::= SMALL | LARGE | HUGE
+
+   1) BAD things will happen if you reuse a serial number
+   2) Do not forget to run ``make'' if you modify this file 
+*/
+SMALL(1,      2,       16,    100);
+SMALL(2,    333,        8,    100);
+LARGE(3,   3300,        1,     50);
+LARGE(4,   2111,       32,     50);
+HUGE(5,   16550,     4096,     25);

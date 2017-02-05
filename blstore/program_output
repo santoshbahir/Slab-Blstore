@@ -1,0 +1,25 @@
+Trying to create Block-Store... OK
+Trying to close Block-Store... OK
+Opening existing store... OK
+Trying to close Block-Store... OK
+Trying to begin first transaction... OK
+Trying to Abort the transaction... OK
+Trying to begin transaction... OK
+Trying to Commit the transaction... OK
+Trying to acquire 10 LBAs... OK
+Trying to acquire 10 more LBAs... OK
+Comparing LBAs obtained... OK
+Testing Comitted LBA allocation across open/close ...OK
+Testing Drop of non-existant LBA... OK
+Trying to write 1 block of 1s to LBA 31... OK
+Trying to read ... OK
+Checking for Data Integrity... OK
+Trying Read/write survival across open/close ... OK
+Testing Drop of existing, written-to LBA... OK
+Read a random LBA test ... OK
+Re-Write test ... OK
+Testing lba->dba map creation ... OK
+Testing non-persistance of LBAs and DBAs across Abort ... OK
+Space Availability test ... Space Availability test ...  100Space Availability test ...  200Space Availability test ...  300Space Availability test ...  400Space Availability test ...  500Space Availability test ...  600Space Availability test ...  700Space Availability test ...  800Space Availability test ...  900Space Availability test ...  1000Space Availability test ...  1100Space Availability test ...  1200Space Availability test ...  1300Space Availability test ...  1400Space Availability test ...  1500Space Availability test ...  1600Space Availability test ...  1700Space Availability test ...  1800Space Availability test ...  1900Space Availability test ...  2000Space Availability test ...  2100Space Availability test ...  2200Space Availability test ...  2300Space Availability test ...  2400Space Availability test ...  2500Space Availability test ...  2600Space Availability test ...  2700Space Availability test ...  2800Space Availability test ...  2900Space Availability test ...  3000Space Availability test ...  3100Space Availability test ...  3200Space Availability test ...  3300Space Availability test ...  3400Space Availability test ...  3500Space Availability test ...  3600Space Availability test ...  3700Space Availability test ...  3800Space Availability test ...  3900Space Availability test ...  4000Space Availability test ...  4100Space Availability test ...  4200Space Availability test ...  4300Space Availability test ...  4400Space Availability test ...  4500Space Availability test ...  4600Space Availability test ...  4700Space Availability test ...  4800Space Availability test ...  4900Space Availability test ...  5000Space Availability test ...  5100Space Availability test ...  5200Space Availability test ...  5300Space Availability test ...  5400Space Availability test ...  5500Space Availability test ...  5600Space Availability test ...  5700Space Availability test ...  5800Space Availability test ...  5900Space Availability test ...  6000Space Availability test ...  6100Space Availability test ...  6200Space Availability test ...  6300Space Availability test ...  6400Space Availability test ...  6500Space Availability test ...  6600Space Availability test ...  6700Space Availability test ...  6800Space Availability test ...  6900Space Availability test ...  7000Space Availability test ...  7100Space Availability test ...  7200Space Availability test ...  7300Space Availability test ...  7400Space Availability test ...  7500Space Availability test ...  7600Space Availability test ...  7700Space Availability test ... FAIL. [not found]
+Parent/Child test ... OK
+Trying Sparsity test ... OK

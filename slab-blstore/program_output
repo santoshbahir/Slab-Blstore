@@ -1,0 +1,189 @@
+Trying to create Block-Store... OK
+Trying to close Block-Store... OK
+Opening existing store... OK
+Trying to close Block-Store... OK
+Opeing the blockstore and beginning the transaction ... Trying to acquire Father LBA... OK
+Starting Tests
+Creating Object Caches...
+Allocating Objects ...
+Trying to construct object o1 ...
+Trying to construct object o2 ...
+Trying to construct object o3 ...
+Trying to construct object o4 ...
+Trying to construct object o5 ...
+DONE allocating Objects
+bufctl statistics:
+ATTN: Picking small_bufctl_size = 12
+Slab Statistics:
+	Slab-kind (inferred) = SMALL
+	Color      = 0
+	Size       = 40
+	Align      = 1
+	#Free      = 4
+	#Allocated = 14
+
+	Total Objects (calculated)    = 18
+	Min No. Objects I expected    = 18
+	No. Pages     (calculated)    = 1
+	No. Pages I expected          = 1
+	Total Payload (calculated)    = 936
+	Total memory (allegedly) used = 1024
+	FRAGMENTATION (as calculated using above data) = 0.094017
+Testing slabs of cache c1:
+As of now only one object should exist:
+The slab should be full now:
+Slab Statistics:
+	Slab-kind (inferred) = SMALL
+	Color      = 0
+	Size       = 2
+	Align      = 16
+	#Free      = 0
+	#Allocated = 57
+
+	Total Objects (calculated)    = 57
+	Min No. Objects I expected    = 57
+	No. Pages     (calculated)    = 1
+	No. Pages I expected          = 1
+	Total Payload (calculated)    = 912
+	Total memory (allegedly) used = 1024
+	FRAGMENTATION (as calculated using above data) = 0.122807
+This should be a new slab:
+Slab Statistics:
+	Slab-kind (inferred) = SMALL
+	Color      = 0
+	Size       = 2
+	Align      = 16
+	#Free      = 56
+	#Allocated = 1
+
+	Total Objects (calculated)    = 57
+	Min No. Objects I expected    = 57
+	No. Pages     (calculated)    = 1
+	No. Pages I expected          = 1
+	Total Payload (calculated)    = 912
+	Total memory (allegedly) used = 1024
+	FRAGMENTATION (as calculated using above data) = 0.122807
+If you have not got any Panics till now, Allocation works fine for c1
+If you have not got any Panics till now, Destruction works fine for c1
+---------------------------------------------------------
+
+Testing slabs of cache c2:
+As of now only one object should exist:
+The slab should be full now:
+Slab Statistics:
+	Slab-kind (inferred) = SMALL
+	Color      = 0
+	Size       = 83
+	Align      = 8
+	#Free      = 0
+	#Allocated = 10
+
+	Total Objects (calculated)    = 10
+	Min No. Objects I expected    = 10
+	No. Pages     (calculated)    = 1
+	No. Pages I expected          = 1
+	Total Payload (calculated)    = 960
+	Total memory (allegedly) used = 1024
+	FRAGMENTATION (as calculated using above data) = 0.066667
+This should be a new slab:
+Slab Statistics:
+	Slab-kind (inferred) = SMALL
+	Color      = 0
+	Size       = 83
+	Align      = 8
+	#Free      = 9
+	#Allocated = 1
+
+	Total Objects (calculated)    = 10
+	Min No. Objects I expected    = 10
+	No. Pages     (calculated)    = 1
+	No. Pages I expected          = 1
+	Total Payload (calculated)    = 960
+	Total memory (allegedly) used = 1024
+	FRAGMENTATION (as calculated using above data) = 0.066667
+If you have not got any Panics till now, Allocation works fine for c2
+If you have not got any Panics till now, Destruction works fine for c2
+---------------------------------------------------------
+
+Testing slabs of cache c3:
+As of now only one object should exist:
+The slab should be full now:
+Slab Statistics:
+	Slab-kind (inferred) = LARGE
+	Color      = 0
+	Size       = 825
+	Align      = 1
+	#Free      = 0
+	#Allocated = 6
+
+	Total Objects (calculated)    = 6
+	Min No. Objects I expected    = 6
+	No. Pages     (calculated)    = 5
+	No. Pages I expected          = 5
+	Total Payload (calculated)    = 4950
+	Total memory (allegedly) used = 5120
+	FRAGMENTATION (as calculated using above data) = 0.034343
+This should be a new slab:
+Slab Statistics:
+	Slab-kind (inferred) = LARGE
+	Color      = 0
+	Size       = 825
+	Align      = 1
+	#Free      = 5
+	#Allocated = 1
+
+	Total Objects (calculated)    = 6
+	Min No. Objects I expected    = 6
+	No. Pages     (calculated)    = 5
+	No. Pages I expected          = 5
+	Total Payload (calculated)    = 4950
+	Total memory (allegedly) used = 5120
+	FRAGMENTATION (as calculated using above data) = 0.034343
+If you have not got any Panics till now, Allocation works fine for c3
+If you have not got any Panics till now, Destruction works fine for c3
+---------------------------------------------------------
+
+Testing slabs of cache c4:
+As of now only one object should exist:
+The slab should be full now:
+Slab Statistics:
+	Slab-kind (inferred) = LARGE
+	Color      = 0
+	Size       = 527
+	Align      = 32
+	#Free      = 0
+	#Allocated = 7
+
+	Total Objects (calculated)    = 7
+	Min No. Objects I expected    = 7
+	No. Pages     (calculated)    = 4
+	No. Pages I expected          = 4
+	Total Payload (calculated)    = 3808
+	Total memory (allegedly) used = 4096
+	FRAGMENTATION (as calculated using above data) = 0.075630
+This should be a new slab:
+Slab Statistics:
+	Slab-kind (inferred) = LARGE
+	Color      = 0
+	Size       = 527
+	Align      = 32
+	#Free      = 6
+	#Allocated = 1
+
+	Total Objects (calculated)    = 7
+	Min No. Objects I expected    = 7
+	No. Pages     (calculated)    = 4
+	No. Pages I expected          = 4
+	Total Payload (calculated)    = 3808
+	Total memory (allegedly) used = 4096
+	FRAGMENTATION (as calculated using above data) = 0.075630
+If you have not got any Panics till now, Allocation works fine for c4
+If you have not got any Panics till now, Destruction works fine for c4
+---------------------------------------------------------
+
+Running Stress Test...
+Now testing dmem_reap()
+Now freeing All Caches
+If you have not got a seg-fault or Panic till now, the allocator is probably OK
+End of ALL tests
+Commit-OK
